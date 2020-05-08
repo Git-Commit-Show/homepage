@@ -78,9 +78,42 @@ html, body {
 }
 
 #countdown{
-				padding-top: 100px;
+				padding-top: 50px;
 				padding-bottom: 80px;
 }
+
+#flexCount {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flexTimer {
+				flex: 1;
+}
+
+#flexVolunteer {
+				flex: 2;
+}
+
+.contributor {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#links{
+				list-style: none;
+}
+
+.sidebar {
+  flex: 1;
+	margin-left: 20px;
+}
+.main {
+  flex: 1;
+}
+
 
 #fixed {
 	background: url(img/background.jpg) no-repeat center center fixed;

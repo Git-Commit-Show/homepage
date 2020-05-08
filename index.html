@@ -9,6 +9,8 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet" />
 	<link rel="icon" href="invide.png">
 </head>
@@ -31,11 +33,11 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-main">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#prev">Previous</a></li>
-					<li><a href="http://push.gitcommit.show/" target="_blank">Volunteer</a></li>
-					<li><a href="#countdown">Countdown</a></li>
-					<li><a href="https://goo.gl/forms/N0DOiivNuzOFwxZR2"
-							target="_blank">Collaborate</a></li>
+					<li><a href="#prev">Speakers</a></li>
+					<li><a href="#countdown">Volunteers</a></li>
+					<li><a href="http://push.gitcommit.show/" target="_blank">Join Us</a></li>
+					<li><a href="https://goo.gl/forms/N0DOiivNuzOFwxZR2" target="_blank">CFP</a>
+					</li>
 					<li><a href="#footer">Contact Us</a></li>
 				</ul>
 			</div>
@@ -101,13 +103,29 @@
 	<section id="countdown">
 		<div class="padding">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 ">
+				<div id="flexCount" class="row">
+					<div id="flexTimer" class="col-sm-6 ">
 						<h2>Add countdown timer here</h2>
 						<p>some details about this year's event</p>
-						<p>add a pic of volunteers, and link to notion, and top contributor</p>
+						<div class="contributor">
+							<main class="main"><img src="img/thenerdsuperuser.jpg"
+									alt="Top Contributor"></main>
+							<aside class="sidebar">
+								<h4>Top Contributor :</h4>
+								<h5>Parth Krishna</h5>
+								<ul>
+									<li id="links">
+										<a
+											href="https://github.com/thenerdsuperuser"><i
+												class="fab fa-github">Github</i></a>
+									</li>
+									<li id="links">twitter</li>
+									<li id="links">linkedin</li>
+								</ul>
+							</aside>
+						</div>
 					</div>
-					<div class="col-sm-6">
+					<div id="flexVolunteer" class="col-sm-6">
 						<a
 							href="https://www.notion.so/gitcommitshow/f01b5208027d4ebf8e72042878e38389?v=5abdbac464f34fecab87f500b8bc1e46"><img
 								src="img/volunteers.jpeg"
