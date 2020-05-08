@@ -4,6 +4,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	/*background: #1E2249;*/
 	font-family: 'Josefin Sans', sans-serif;
 	scroll-behavior: smooth;
 }
