@@ -29,6 +29,7 @@ html, body {
 	color: #FFF;
 }
 
+
 #home {
 	/*padding-top: 50px;*/
 	background: url("../img/back.png") no-repeat center fixed;
@@ -170,7 +171,7 @@ footer {
 }
 
 
-@media(max-width: 760px) {
+@media(max-width: 768px) {
 	.landing-text h1 {
 		font-size: 300%;
 	}
@@ -181,5 +182,13 @@ footer {
 	.icon {
 		padding-top: 5%;
 		max-width: 100px;
+	}
+	#flexCount { 
+		    flex-direction: column; 
+		      float: left;
+		      
+	}
+	#flexVolunteer {
+		padding-top: 10%;
 	}
 }
