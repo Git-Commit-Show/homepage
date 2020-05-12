@@ -171,16 +171,12 @@ footer {
 	max-width: 200px;
 }
 
-@media (max-width: 767px) {
-	.container-fluid,
-	.row {
-		padding: 0px;
+/*@media (max-width: 767px) {*/
+@media (max-width: 978px) {
+	.navbar-brand {
+		height: 30px;
+		width: 30px;
 	}
-	.navbar-header {
-		margin: 0px;
-	}
-
-/*@media (max-width: 978px) {*/
 	.landing-text h1 {
 		font-size: 300%;
 	}
@@ -189,8 +185,9 @@ footer {
 		padding: 10px;
 	}
 	.icon {
-		padding-top: 5%;
-		max-width: 100px;
+		margin-top: -5%;
+		height: 50em;
+		width: 50em;
 	}
 	#flexCount {
 		flex-direction: column;
@@ -200,8 +197,8 @@ footer {
 		padding-top: 10%;
 	}
 	.love {
-		padding-top: 10%;
 		text-align: center;
 		font-size: 13px;
+		margin-top: -10px;
 	}
 }
