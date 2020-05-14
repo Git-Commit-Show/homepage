@@ -49,13 +49,13 @@ body {
 	vertical-align: middle;
 }
 
-.lead {
-	text-align: justify;
+.landing-text h1 {
+	font-size: 500%;
+	font-weight: 700;
 }
 
-.love {
-	text-align: center;
-	font-size: 20px;
+.lead {
+	text-align: justify;
 }
 
 .row {
@@ -63,16 +63,6 @@ body {
 	padding-bottom: 2px;
 }
 
-.landing-text h1 {
-	font-size: 500%;
-	font-weight: 700;
-}
-/*
-#about {
-padding-block-start: 115px;
-height: 550px;
-}
- */
 .padding {
 	padding: 80px 0;
 	width: 100%;
@@ -82,9 +72,13 @@ height: 550px;
 	width: 100%;
 }
 
-#countdown {
-	padding-top: 50px;
-	padding-bottom: 80px;
+#curr {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#prev {
+	padding-top: 5px;
 }
 
 #flexCount {
@@ -92,8 +86,44 @@ height: 550px;
 	flex-wrap: wrap;
 }
 
+#countdown {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
 #flexTimer {
 	flex: 1;
+}
+
+.sidebar {
+	flex: 1;
+	margin-left: 20px;
+}
+
+.main {
+	flex: 1;
+}
+
+.contributor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#links {
+	list-style: none;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: white;
+}
+
+.fa:hover {
+	color: #d5d5d5;
+	text-decoration: none;
 }
 
 #flexVolunteer {
@@ -120,35 +150,6 @@ height: 550px;
 	text-transform: capitalize;
 }
 
-.contributor {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-#links {
-	list-style: none;
-}
-
-.sidebar {
-	flex: 1;
-	margin-left: 20px;
-}
-.main {
-	flex: 1;
-}
-
-#fixed {
-	background: url("../img/background.jpg") no-repeat center center fixed;
-	margin-top: 100px;
-	display: table;
-	height: 60%;
-	position: relative;
-	width: 100%;
-	background-size: cover;
-}
-
 footer {
 	width: 100%;
 	background-color: #1e2249;
@@ -156,28 +157,27 @@ footer {
 	color: white;
 }
 
-.fa {
-	padding: 15px;
-	font-size: 25px;
-	color: white;
-}
-
-.fa:hover {
-	color: #d5d5d5;
-	text-decoration: none;
+.love {
+	text-align: center;
+	font-size: 20px;
 }
 
 .icon {
 	max-width: 200px;
 }
 
+.add {
+	text-align: center;
+	font-size: 15px;
+}
+
 /*@media (max-width: 767px) {*/
-@media (max-width: 978px) {
+@media (max-width: 768px) {
 	.navbar-brand {
 		height: 30px;
 		width: 30px;
 	}
-	.landing-text h1 {
+	.landing-text h1 h3 h4 {
 		font-size: 300%;
 	}
 	.fa {
@@ -185,9 +185,10 @@ footer {
 		padding: 10px;
 	}
 	.icon {
-		margin-top: -5%;
-		height: 50em;
-		width: 50em;
+		margin-top: -2%;
+		margin-bottom: -3%;
+		height: 30%;
+		width: 30%;
 	}
 	#flexCount {
 		flex-direction: column;
@@ -199,6 +200,12 @@ footer {
 	.love {
 		text-align: center;
 		font-size: 13px;
-		margin-top: -10px;
+		margin-top: -30px;
+	}
+	footer {
+		width: 100%;
+		background-color: #1e2249;
+		padding: 2% 2% 5% 2%;
+		color: white;
 	}
 }
