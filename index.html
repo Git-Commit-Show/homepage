@@ -5,10 +5,6 @@
 	<title>Welcome to Git Commit Show</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<script src="https://unpkg.com/pill@1/dist/pill.min.js"></script>
-	<script src="assets/js/pill.js"></script>
-	<link href="assets/css/pill.css" rel="stylesheet" />
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -16,7 +12,7 @@
 
 	<link href="assets/css/index.css" rel="stylesheet" />
 	<script src="assets/js/countdown.js"></script>
-	<link rel="icon" href="invide.png" />
+	<link rel="icon" class="logo" href="invide.png" height="60px" width"60px">
 </head>
 
 <body>
@@ -42,6 +38,7 @@
 					<li><a href="video.html">Consolidated</a></li>
 					<li><a href="#prev">Speakers</a></li>
 					<li><a href="#curr">Speakers New</a></li>
+					<li><a href="#long">Full Videos</a></li>
 					<li><a href="#countdown">Volunteers</a></li>
 					<li>
 						<a href="http://push.gitcommit.show/" target="_blank">Join Us</a>
@@ -55,203 +52,252 @@
 		</div>
 	</nav>
 
-	<div id="indicator">Loading...</div>
-	<div id="content">
-		<div id="home">
-			<div class="landing-text">
-				<h1>Git Commit Show</h1>
-				<h3>World's Largest Online Developer Conference</h3>
-				<h4>#RemoteWork #EqualOpportunity #FutureOfWork</h4>
-				<a href="#" class="btn btn-default btn-lg">Get started</a>
-			</div>
+	<div id="home">
+		<div class="landing-text">
+			<h1>Git Commit Show</h1>
+			<h3>World's Largest Online Developer Conference</h3>
+			<h4>#RemoteWork #EqualOpportunity #FutureOfWork</h4>
+			<h2>Event happens in: </h2>
+			<h2 id="demo"></h2>
+			<a href="#" class="btn btn-default btn-lg">Support</a>
+			<a href="#" class="btn btn-default btn-lg">Volunteer</a>
+			<a href="#" class="btn btn-default btn-lg">CFP</a>
 		</div>
+	</div>
 
-		<!-- current speaker section -->
-		<section id="curr">
-			<div class="padding">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<iframe width="420" height="300" src="https://www.youtube.com/embed/_Y_uaUz7k6w" frameborder="0"
-								allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-							</iframe>
-							<!-- 
+	<!-- current speaker section -->
+	<section id="curr">
+		<div class="padding">
+			<div class="container">
+				<div class="row section-text">
+					<h2>Current Speakers</h2>
+					<div class="col-sm-6">
+						<iframe width="420" height="300" src="https://www.youtube.com/embed/_Y_uaUz7k6w" frameborder="0"
+							allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+						<!-- 
 							<video width="400" controls>
 								<source src="mov_bbb.mp4" type="video/mp4">
 								<source src="mov_bbb.ogg" type="video/ogg">
 								Your browser does not support HTML video.
 							</video>
 							-->
-						</div>
-						<div class="col-sm-6 text-center">
-							<h2>CUrrent Speakers</h2>
-							<p class="lead">
-								Placeholder text.
-							</p>
-							<p class="lead">
-								Uses the video tag.
-							</p>
-						</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<p class="lead">
+							Daniel Stenberg - designations
+						</p>
+						<p class="lead">
+							Oneliner about the talk.
+						</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>ML Algorithms</h4>
+					<p>Sandeep Giri.</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<iframe width="280" height="160" src="https://www.youtube.com/embed/MpB2-gMZRf4" frameborder="0"
+						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>Difference in AI and ML!</h4>
+					<p>Gaurav Nemade</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<iframe width="280" height="160" src="https://www.youtube.com/embed/a3f6bo_KEBU" frameborder="0"
+						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- full videos section -->
+	<section id="long">
+		<div class="padding">
+			<div class="container">
+				<div class="row section-text">
+					<h2>Archives</h2>
+					<div class="col-sm-6">
+						<iframe src="https://drive.google.com/file/d/1OhnyjI_APiLH2V68r2orwnzQacsyAmmB/preview" width="420"
+							height="300"></iframe>
+					</div>
+					<div class="col-sm-6 text-center">
+						<p class="lead">
+							Daniel Stenberg - designations
+						</p>
+						<p class="lead">
+							Oneliner about the talk.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>ML Algorithms</h4>
+					<p>Sandeep Giri.</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<iframe src="https://drive.google.com/file/d/1OhnyjI_APiLH2V68r2orwnzQacsyAmmB/preview" width="280"
+						height="160"></iframe>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>Difference in AI and ML!</h4>
+					<p>Gaurav Nemade</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<iframe src="https://drive.google.com/file/d/1OhnyjI_APiLH2V68r2orwnzQacsyAmmB/preview" width="280"
+						height="160"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- previous speaker section -->
+	<section id="prev">
+		<div class="padding">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h4>Sandeep Giri</h4>
-						<p>He gave me credits to use online. What a nice guy.</p>
+					<div class="col-sm-6">
+						<img src="assets/img/daniel-curl.jpg" />
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="assets/img/sandeep-giri.jpeg" class="img-responsive" />
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h4>Cofounder and Ex-CTO InMobi</h4>
-						<p>Some of my friends work in InMobi</p>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="assets/img/mohit-inmobi.jpeg" class="img-responsive" />
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- previous speaker section -->
-		<section id="prev">
-			<div class="padding">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<img src="assets/img/daniel-curl.jpg" />
-						</div>
-						<div class="col-sm-6 text-center">
-							<h2>Previous Speakers</h2>
-							<p class="lead">
-								📱 If you use Android/Linux/iPad/Windows/macOS/Tesla, cURL is
-								installed on it already. In fact, it's installed on almost every
-								computer device(4b+) on the earth today. Learn how it rose from
-								nothing to this huge success, directly from this open source
-								project's author, Daniel.
-							</p>
-							<p class="lead">
-								🎬 This talk was recorded during Masterclass session at Git
-								Commit Show 2019.
-							</p>
-						</div>
+					<div class="col-sm-6 text-center">
+						<h2>Previous Speakers</h2>
+						<p class="lead">
+							📱 If you use Android/Linux/iPad/Windows/macOS/Tesla, cURL is
+							installed on it already. In fact, it's installed on almost every
+							computer device(4b+) on the earth today. Learn how it rose from
+							nothing to this huge success, directly from this open source
+							project's author, Daniel.
+						</p>
+						<p class="lead">
+							🎬 This talk was recorded during Masterclass session at Git
+							Commit Show 2019.
+						</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>Sandeep Giri</h4>
+					<p>He gave me credits to use online. What a nice guy.</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<img src="assets/img/sandeep-giri.jpeg" class="img-responsive" />
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4>Cofounder and Ex-CTO InMobi</h4>
+					<p>Some of my friends work in InMobi</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<img src="assets/img/mohit-inmobi.jpeg" class="img-responsive" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="countdown">
+		<div class="padding">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h4>Sandeep Giri</h4>
-						<p>He gave me credits to use online. What a nice guy.</p>
+				<div id="flexCount" class="row">
+					<div id="flexTimer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<h1>Top Contributor </h1>
+						<h2 id="demo"></h2>
+						<p class="lead">
+							some details about this year's event. some more details. more
+							content. maybe same para.
+						</p>
+
+						<!-- Top Contributor -->
+						<div class="contributor">
+							<main class="main">
+								<!-- Top Contributor Photo -->
+								<img src="assets/img/thenerdsuperuser.jpg" alt="Top Contributor" />
+							</main>
+
+							<!-- Top Contributor Name -->
+							<aside class="sidebar">
+								<!-- <h4>Top Contributor :</h4> -->
+								<h5>Parth Krishna</h5>
+
+								<!-- Top Contributor Links -->
+								<ul class="fa-ul">
+									<li>
+										<i class="fa-li fa fa-github"></i>
+										<a href="https://github.com/thenerdsuperuser">Github</a>
+									</li>
+									<li>
+										<i class="fa-li fa fa-twitter"></i>
+										<a href="https://twitter.com/vimoveremacs">Twitter</a>
+									</li>
+									<li>
+										<i class="fa-li fa fa-linkedin"></i>
+										<a href="https://linkedin.com/in/parthkrishna">LinkedIn</a>
+									</li>
+								</ul>
+							</aside>
+						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="assets/img/sandeep-giri.jpeg" class="img-responsive" />
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h4>Cofounder and Ex-CTO InMobi</h4>
-						<p>Some of my friends work in InMobi</p>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="assets/img/mohit-inmobi.jpeg" class="img-responsive" />
+
+					<!-- Volunteers Group Photo -->
+					<div id="flexVolunteer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<a href="https://www.notion.so/gitcommitshow/f01b5208027d4ebf8e72042878e38389?v=5abdbac464f34fecab87f500b8bc1e46"
+							target="_blank"><img src="assets/img/volunteers.jpeg" class="volImg"
+								alt="Check out the volunteers!" /></a>
+						<div class="overlay">Check this out and Join Us!</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="countdown">
-			<div class="padding">
-				<div class="container">
-					<div id="flexCount" class="row">
-						<div id="flexTimer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-							<h1>Event happens in:</h1>
-							<h2 id="demo"></h2>
-							<p class="lead">
-								some details about this year's event. some more details. more
-								content. maybe same para.
-							</p>
-
-							<!-- Top Contributor -->
-							<div class="contributor">
-								<main class="main">
-									<!-- Top Contributor Photo -->
-									<img src="assets/img/thenerdsuperuser.jpg" alt="Top Contributor" />
-								</main>
-
-								<!-- Top Contributor Name -->
-								<aside class="sidebar">
-									<h4>Top Contributor :</h4>
-									<h5>Parth Krishna</h5>
-
-									<!-- Top Contributor Links -->
-									<ul class="fa-ul">
-										<li>
-											<i class="fa-li fa fa-github"></i>
-											<a href="https://github.com/thenerdsuperuser">Github</a>
-										</li>
-										<li>
-											<i class="fa-li fa fa-twitter"></i>
-											<a href="https://twitter.com/vimoveremacs">Twitter</a>
-										</li>
-										<li>
-											<i class="fa-li fa fa-linkedin"></i>
-											<a href="https://linkedin.com/in/parthkrishna">LinkedIn</a>
-										</li>
-									</ul>
-								</aside>
-							</div>
-						</div>
-
-						<!-- Volunteers Group Photo -->
-						<div id="flexVolunteer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-							<a href="https://www.notion.so/gitcommitshow/f01b5208027d4ebf8e72042878e38389?v=5abdbac464f34fecab87f500b8bc1e46"
-								target="_blank"><img src="assets/img/volunteers.jpeg" class="volImg"
-									alt="Check out the volunteers!" /></a>
-							<div class="overlay">Check this out and Join Us!</div>
-						</div>
-					</div>
+	<section id="footer">
+		<footer class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Contact us</h3>
+					<br />
+					<p class="add">Call or Whatsapp or Signal: +918826701901</p>
+					<p class="add">Email: team@gitcommit.show</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Connect</h3>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-youtube"></a>
+				</div>
+				<div class="col-sm-4">
+					<h4>
+						<img src="assets/img/invideLabs.png" class="icon" />
+					</h4>
+					<br />
+					<h4>A product of Invide.</h4>
 				</div>
 			</div>
-		</section>
-
-		<section id="footer">
-			<footer class="container-fluid text-center">
-				<div class="row">
-					<div class="col-sm-4">
-						<h3>Contact us</h3>
-						<br />
-						<p class="add">Call or Whatsapp or Signal: +918826701901</p>
-						<p class="add">Email: team@gitcommit.show</p>
-					</div>
-					<div class="col-sm-4">
-						<h3>Connect</h3>
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
-						<a href="#" class="fa fa-google"></a>
-						<a href="#" class="fa fa-linkedin"></a>
-						<a href="#" class="fa fa-instagram"></a>
-						<a href="#" class="fa fa-youtube"></a>
-					</div>
-					<div class="col-sm-4">
-						<h4>
-							<img src="assets/img/invideLabs.png" class="icon" />
-						</h4>
-						<br />
-						<h4>A product of Invide.</h4>
-					</div>
-				</div>
-				<br />
-				<br />
-				<div>
-					<p class="love">Made with ♥ by 100% remote team of Invide</p>
-				</div>
-			</footer>
-		</section>
-	</div>
+			<br />
+			<br />
+			<div>
+				<p class="love">Made with ♥ by 100% remote team of Invide</p>
+			</div>
+		</footer>
+	</section>
 </body>
 
 </html>
