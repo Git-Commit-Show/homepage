@@ -124,6 +124,11 @@ body {
 	color: #d5d5d5;
 	text-decoration: none;
 }
+.fa-ul li a{
+	display: inline-block;
+	margin-top: 8px;
+	text-align: center;
+}
 
 #flexVolunteer {
 	flex: 2;
@@ -169,12 +174,6 @@ footer {
 	text-align: center;
 	font-size: 15px;
 }
-.fa-ul li a{
-	display: inline-block;
-	margin-top: 8px;
-	text-align: center;
-}
-
 /*@media (max-width: 767px) {*/
 @media (max-width: 768px) {
 	.navbar-brand {
