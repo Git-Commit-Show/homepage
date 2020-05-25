@@ -12,10 +12,10 @@
 
 	<link href="assets/css/index.css" rel="stylesheet" />
 	<script src="assets/js/countdown.js"></script>
-	<link rel="icon" class="logo" href="invide.png" height="60px" width"60px">
+	<link rel="icon" class="logo" href="invide.png" height="60px" width="60px">
 </head>
 
-<body>
+<body class="body">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="wrapping container-fluid">
 			<!-- Hamburger menu -->
@@ -29,7 +29,7 @@
 				<a class="navbar-brand" href="http://gitcommit.show/" target="_blank"><img src="assets/img/invide.png"
 						height="55px" width="55px" /></a>
 
-				<span class="navbar-text">Git Commit Show</span>
+				<h3 class="navbar-text"><strong>Git Commit Show 2020</strong></h3>
 			</div>
 			<!-- Hamburger menu options -->
 			<div class="collapse navbar-collapse" id="navbar-collapse-main">
@@ -290,12 +290,13 @@
 				</div>
 				<div class="col-sm-4">
 					<h3>Connect</h3>
-					<a href="#" class="fa fa-facebook fa-footer"></a>
-					<a href="#" class="fa fa-twitter fa-footer"></a>
-					<a href="#" class="fa fa-google fa-footer"></a>
-					<a href="#" class="fa fa-linkedin fa-footer"></a>
-					<a href="#" class="fa fa-instagram fa-footer"></a>
-					<a href="#" class="fa fa-youtube fa-footer"></a>
+					<br>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-youtube"></a>
 				</div>
 				<div class="col-sm-4">
 					<h4>
@@ -312,6 +313,14 @@
 			</div>
 		</footer>
 	</section>
+	<!-- hamburgur smoothy scroll -->
+<script>
+	$(document).ready(function(){
+	$(".body").click(function(){
+	  $(".collapse").collapse('toggle');
+	});
+  });
+</script>
 </body>
 
 </html>
