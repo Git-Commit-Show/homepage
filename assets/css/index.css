@@ -212,4 +212,7 @@ footer {
 		padding: 2% 2% 5% 2%;
 		color: white;
 	}
+	.navbar-text {
+		padding-left: 60px;
+	}
 }
