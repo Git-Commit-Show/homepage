@@ -120,15 +120,10 @@ body {
 }
 
 .fa {
-	/* padding: 15px; */
 	font-size: 25px;
+	margin-right: 10px;
 	color: #FD423D;
 }
-
-.fa-footer {
-	padding: 5px;
-}
-
 .fa:hover {
 	color: #d5d5d5;
 	text-decoration: none;
@@ -193,6 +188,7 @@ footer {
 	.navbar-text{
 		display: block;
 		margin:15px 100px;
+		text-align: center;
 	}
 	.landing-text h1 h3 h4 {
 		font-size: 300%;
