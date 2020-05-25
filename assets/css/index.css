@@ -124,10 +124,16 @@ body {
 	font-size: 25px;
 	color: #FD423D;
 }
+
+.fa-footer {
+	padding: 5px;
+}
+
 .fa:hover {
 	color: #d5d5d5;
 	text-decoration: none;
 }
+
 .fa-ul li a{
 	display: inline-block;
 	margin-top: 8px;
