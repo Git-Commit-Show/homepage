@@ -1,326 +1,244 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Welcome to Git Commit Show</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-	<link href="assets/css/index.css" rel="stylesheet" />
-	<script src="assets/js/countdown.js"></script>
-	<link rel="icon" class="logo" href="invide.png" height="60px" width="60px">
+	<link href="assets/css/index.css" rel="stylesheet"/>
+	<link rel="icon" class="logo" href="invide.png" height="60px" width"60px">
 </head>
-
-<body class="body">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="wrapping container-fluid">
-			<!-- Hamburger menu -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://gitcommit.show/" target="_blank"><img src="assets/img/invide.png"
-						height="55px" width="55px" /></a>
-
-				<h3 class="navbar-text"><strong>Git Commit Show 2020</strong></h3>
-			</div>
-			<!-- Hamburger menu options -->
-			<div class="collapse navbar-collapse" id="navbar-collapse-main">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="active" href="#">Home</a></li>
+<body>
+	<!----------NAVBAR----------->
+	<nav class="navbar navbar-expand-lg navbar-default fixed-top" role="navigation">
+		<a class="navbar-brand" href="http://gitcommit.show/" target="_blank"><img id='logo' src="assets/img/invide.png"/></a>
+		<h3 class="navbar-text"><strong>Git Commit Show 2020</strong></h3>
+		<button class="navbar-toggler" id='toggle-menu-btn' type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav nav navbar-right ml-auto">
+    				<li class="nav-item active"><a  class="nav-link navstyle" href="#home">Home<span class="sr-only">(current)</span></a></li>
 					<!-- <li><a href="video.html">Consolidated</a></li> -->
-					<li><a href="#highlight">Highlights</a></li>
-					<li><a href="#long">Archives</a></li>
-					<li><a href="#prev">Speakers</a></li>
-					<li><a href="#countdown">Volunteers</a></li>
-					<li>
-						<a href="http://push.gitcommit.show/" target="_blank">Join Us</a>
-					</li>
-					<li>
-						<a href="https://goo.gl/forms/N0DOiivNuzOFwxZR2" target="_blank">CFP</a>
-					</li>
-					<li><a href="#footer">Contact Us</a></li>
-				</ul>
-			</div>
+					<li class="nav-item"><a  class="nav-link navstyle"href="#highlight">Highlights</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="#archives">Archives</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="#speakers">Speakers</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="#volunteers">Volunteers</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="http://push.gitcommit.show/" target="_blank">Join Us</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="https://goo.gl/forms/N0DOiivNuzOFwxZR2" target="_blank">CFP</a></li>
+					<li class="nav-item"><a  class="nav-link navstyle"href="#footer">Contact Us</a></li>
+    		</ul>
 		</div>
 	</nav>
-
+	<!----------NAVBAR ENDS----------->
+	<!----------HOME SECTION---------->
 	<div id="home">
-		<div class="landing-text">
+		<div id="landing-text">
 			<h1>Git Commit Show</h1>
 			<h3>World's Largest Online Developer Conference</h3>
 			<h4>#RemoteWork #EqualOpportunity #FutureOfWork</h4>
 			<h2>Event happens in: </h2>
 			<h2 id="demo"></h2>
-			<a href="https://www.patreon.com/gitcommitshow" class="btn btn-default btn-lg">Support Us</a>
-			<a href="http://push.gitcommit.show/" class="btn btn-default btn-lg">Volunteer</a>
-			<a href="https://goo.gl/forms/N0DOiivNuzOFwxZR2" class="btn btn-default btn-lg">CFP</a>
+			<div id="links">
+				<a href="https://www.patreon.com/gitcommitshow" class="btn btn-outline-dark" data-toggle="button" aria-pressed="false">Support Us</a>
+				<a href="http://push.gitcommit.show/" class="btn btn-outline-dark" data-toggle="button" aria-pressed="false">Volunteer</a>
+				<a href="https://goo.gl/forms/N0DOiivNuzOFwxZR2" class="btn btn-outline-dark" data-toggle="button" aria-pressed="false">CFP</a>
+			</div>
 		</div>
 	</div>
-
-	<!-- highlightent speaker section -->
-	<section id="highlight">
-		<div class="padding">
-			<div class="container">
-				<div class="row section-text">
-					<h2>Highlights Git Commit Show 2019</h2>
-					<div class="col-sm-6">
-						<iframe width="420" height="300" src="https://www.youtube.com/embed/NiBwIddeCgA" frameborder="0"
-							allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-						</iframe>
-						<!-- 
-							<video width="400" controls>
-								<source src="mov_bbb.mp4" type="video/mp4">
-								<source src="mov_bbb.ogg" type="video/ogg">
-								Your browser does not support HTML video.
-							</video>
-							-->
-					</div>
-					<div class="col-sm-6 text-center">
-						<p class="lead">
-							Daniel Stenberg - Author of cURL.
-						</p>
-						<p class="lead">
+	<!--------HOME SECTION ENDS------->
+	<!---- HIGHLIGHTS SECTION--------->
+	<div id="highlight">
+		<span class="heading"><h2>Highlights Of Git Commit Show 2019</h2></span>
+			<div id='main-highlight-div'>
+				<div class="highlight-child">
+					<iframe src="https://www.youtube.com/embed/NiBwIddeCgA" frameborder="0"allow="accelerometer; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<span><h3>Daniel Stenberg - Author of cURL.</h3>
+						<p>
 							Daniel has been open sourced cURL in 1998. Now, cURL is installed on almost every computer device(4b+) on
 							the earth today. Here's his advice on how things have changed in open source and how to go about with new
 							open source project.
 						</p>
-					</div>
+					</span>
 				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>Sandeep Giri - Founder of CloudxLab.com</h4>
-					<p>Sandeep Giri talks about features, labels & instances as key blocks for ML.</p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<iframe width="280" height="160" src="https://www.youtube.com/embed/8q739FevyNM" frameborder="0"
-						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>3D Mouse</h4>
-					<p>A young developer showcased howa mobile device can be caliberated to be used as a 3D Mouse.</p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<iframe width="280" height="160" src="https://www.youtube.com/embed/rtP8RmoAaCw" frameborder="0"
-						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- full videos section -->
-	<section id="long">
-		<div class="padding">
-			<div class="container">
-				<div class="row section-text">
-					<h2>Archives</h2>
-					<!---
-					<div class="col-sm-6">
-						<iframe width="280" height="160" src="https://www.youtube.com/embed/oYP7W1gXzsI" frameborder="0"
-							allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-						</iframe>
-					</div>
-					<div class="col-sm-6 text-center">
-						<p class="lead">
-							Masterclass by Daniel, author of cURL
+				<div class="highlight-child">
+					<iframe src="https://www.youtube.com/embed/8q739FevyNM" frameborder="0"allow="accelerometer; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<span><h3>Sandeep Giri - Founder of CloudxLab.com</h3>
+						<p>
+							Sandeep Giri talks about features, labels & instances as key blocks for ML.
 						</p>
-						<p class="lead">
+					</span>
+				</div>
+				<div class="highlight-child">
+					<iframe src="https://www.youtube.com/embed/rtP8RmoAaCw" frameborder="0"allow="accelerometer; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<span><h3>3D Mouse</h3>
+						<p>
+							A young developer showcased howa mobile device can be caliberated to be used as a 3D Mouse.
+						</p>
+					</span>
+				</div>
+			</div>
+	</div>		
+	<!---HIGHLIGHTS SECTION END---->
+	<!----ARCHIVES SECTION--------->
+	<div id="archives">
+		<span class="heading"><h2>Archives</h2></span>
+			<div id='main-archives-div'>
+				<div class="archives-child">
+					<iframe src="https://www.youtube.com/embed/BT7eMIZSxy4" frameborder="0"allow="accelerometer; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<span><h3>Masterclass by Gaurav, PM at Google AI</h3>
+						<p>
+							AI for everyday things - present and future of AI in our daily life
+						</p>
+					</span>
+				</div>
+				<div class="archives-child">
+					<iframe src="https://www.youtube.com/embed/oYP7W1gXzsI" frameborder="0"allow="accelerometer; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<span><h3>Masterclass by Daniel, author of cURL</h3>
+						<p>
 							Learn how cURL rose from nothing to a huge success directly from it's author, Daniel. Daniel has been
 							programming & contributing to open source since 1985.
 						</p>
-					</div>
-					-->
+					</span>
 				</div>
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>Masterclass by Gaurav, PM at Google AI</h4>
-					<p>AI for everyday things - present and future of AI in our daily life</p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<iframe width="280" height="160" src="https://www.youtube.com/embed/BT7eMIZSxy4" frameborder="0"
-						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>
-						Masterclass by Daniel, author of cURL
-					</h4>
-					<p>
-						Learn how cURL rose from nothing to a huge success directly from it's author, Daniel. Daniel has been
-						programming & contributing to open source since 1985.
-					</p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<iframe width="280" height="160" src="https://www.youtube.com/embed/oYP7W1gXzsI" frameborder="0"
-						allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- previous speaker section -->
-	<section id="prev">
-		<div class="padding">
-			<div class="container">
-				<div class="row">
-					<h2>Previous Speakers</h2>
-					<div class="col-sm-6">
-						<img src="assets/img/daniel-curl.jpg" />
+	</div>
+	<!----ARCHIVES SECTION END---->
+	<!----SPEAKERS SECTION-------->
+	<div id="speakers">
+		<span class="heading"><h2>Previous Speakers</h2></span>
+			<div id="main-speakers-div">
+				<div class="speakers-child">
+					<div class="speakers-picture">
+						<img src="assets/img/daniel-curl.jpg"/>
 					</div>
-					<div class="col-sm-6 text-center">
-						<p class="lead">
-							📱 If you use Android/Linux/iPad/Windows/macOS/Tesla, cURL is
+					<span>
+						<h3>Daniel Stenberg</h3>
+						<p>
+							If you use Android/Linux/iPad/Windows/macOS/Tesla, cURL is
 							installed on it already. In fact, it's installed on almost every
 							computer device(4b+) on the earth today. Learn how it rose from
 							nothing to this huge success, directly from this open source
-							project's author, Daniel.
+							project's author, Daniel
 						</p>
-						<p class="lead">
-							🎬 This talk was recorded during Masterclass session at Git
+						<p>
+							This talk was recorded during Masterclass session at Git
 							Commit Show 2019.
 						</p>
+					</span>
+				</div>				
+				<div class="speakers-child">
+					<div class="speakers-picture">
+						<img src="assets/img/sandeep-giri.jpeg">
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>Sandeep Giri</h4>
-					<p><a href="https://www.linkedin.com/in/girisandeep/">Sandeep Giri</a> is the Founder of <a
-							href="https://cloudxlab.com/">CloudxLab</a></p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<img src="assets/img/sandeep-giri.jpeg" class="img-responsive" />
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<h4>Cofounder and Ex-CTO InMobi</h4>
-					<p><a href="https://www.linkedin.com/in/mohitsaxena/">Mohit Saxena</a> is the Cofounder and Ex-CTO of <a
-							href="https://www.inmobi.com/">InMobi</a></p>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<img src="assets/img/mohit-inmobi.jpeg" class="img-responsive" />
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="countdown">
-		<div class="padding">
-			<div class="container">
-				<div id="flexCount" class="row">
-					<div id="flexTimer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h1>Top Contributor </h1>
-						<h2 id="demo"></h2>
-						<p class="lead">
-							This week's top contributor is Parth Krishna aka thenerdsuperuser.
+					<span>
+						<h3>Sandeep Giri</h3>
+						<p>
+							<a href="https://www.linkedin.com/in/girisandeep/">Sandeep Giri</a> is the Founder of <a
+							href="https://cloudxlab.com/">CloudxLab</a>
 						</p>
-
-						<!-- Top Contributor -->
-						<div class="contributor">
-							<main class="main">
-								<!-- Top Contributor Photo -->
-								<img src="assets/img/thenerdsuperuser.jpg" alt="Top Contributor" />
-							</main>
-
-							<!-- Top Contributor Name -->
-							<aside class="sidebar">
-								<!-- <h4>Top Contributor :</h4> -->
-								<h4>Parth Krishna</h4>
-
-								<!-- Top Contributor Links -->
-								<ul class="fa-ul">
-									<li>
-										<i class="fa-li fa fa-github"></i>
-										<a href="https://github.com/thenerdsuperuser">Github</a>
-									</li>
-									<li>
-										<i class="fa-li fa fa-twitter"></i>
-										<a href="https://twitter.com/vimoveremacs">Twitter</a>
-									</li>
-									<li>
-										<i class="fa-li fa fa-linkedin"></i>
-										<a href="https://linkedin.com/in/parthkrishna">LinkedIn</a>
-									</li>
-								</ul>
-							</aside>
-						</div>
+					</span>
+				</div>				
+				<div class="speakers-child">
+					<div class="speakers-picture">
+						<img src="assets/img/mohit-inmobi.jpeg"/>
 					</div>
-
-					<!-- Volunteers Group Photo -->
-					<div id="flexVolunteer" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a href="https://www.notion.so/gitcommitshow/f01b5208027d4ebf8e72042878e38389?v=5abdbac464f34fecab87f500b8bc1e46"
-							target="_blank"><img src="assets/img/volunteers.jpeg" class="volImg"
-								alt="Check out the volunteers!" /></a>
-						<div class="overlay">Check this out and Join Us!</div>
-					</div>
+					<span>
+						<h3>Mohit Saxena</h3>
+						<p>
+							Cofounder and Ex-CTO InMobi	
+						</p>
+						<p>
+							<a href="https://www.linkedin.com/in/mohitsaxena/">Mohit Saxena</a> is the Cofounder and Ex-CTO of 
+							<a href="https://www.inmobi.com/">InMobi</a></p>
+						</p>
+					</span>
 				</div>
 			</div>
+	</div>
+	<!---SPEAKERS SECTION END--->
+	<!----VOLUNTEERS SECTION---->
+	<div id="volunteers">
+		<div id="top-contributor"  class='volunteers-child'>
+			<span class="heading" ><h1>Top Contributor</h1></span>
+			<span>
+			<p style='align-text:center;padding:10px;'>
+				This week's top contributor is Parth Krishna aka thenerdsuperuser.
+			</p>
+			</span>
+			<div id='top-contributor-child'>
+			<span>
+				<img src="assets/img/thenerdsuperuser.jpg" alt="Top Contributor"/>
+			</span>
+			<div>
+				<h4>Parth Krishna</h4>
+				<ul class="fa-ul">
+					<li>
+						<i class="fa-li fa fa-github"></i>
+						<a href="https://github.com/thenerdsuperuser">Github</a>
+					</li>
+					<li>
+						<i class="fa-li fa fa-twitter"></i>
+						<a href="https://twitter.com/vimoveremacs">Twitter</a>
+					</li>
+					<li>
+						<i class="fa-li fa fa-linkedin"></i>
+						<a href="https://linkedin.com/in/parthkrishna">LinkedIn</a>
+					</li>
+				</ul>
+			</div></div>
 		</div>
-	</section>
-
-	<section id="footer">
-		<footer class="container-fluid text-center">
-			<div class="row">
-				<div class="col-sm-4">
-					<h3>Contact us</h3>
-					<br />
-					<p class="add">Call or Whatsapp or Signal: +918826701901</p>
-					<p class="add">Email: team@gitcommit.show</p>
-				</div>
-				<div class="col-sm-4">
-					<h3>Connect</h3>
-					<br>
-					<a href="#" class="fa fa-facebook"></a>
-					<a href="#" class="fa fa-twitter"></a>
-					<a href="#" class="fa fa-google"></a>
-					<a href="#" class="fa fa-linkedin"></a>
-					<a href="#" class="fa fa-instagram"></a>
-					<a href="#" class="fa fa-youtube"></a>
-				</div>
-				<div class="col-sm-4">
-					<h4>
-						<img src="assets/img/invideLabs.png" class="icon" />
-					</h4>
-					<br />
-					<h4>A product of Invide.</h4>
-				</div>
-			</div>
-			<br />
-			<br />
+		<div id="group-volunteers" class='volunteers-child'>
+			<a href="https://www.notion.so/gitcommitshow/f01b5208027d4ebf8e72042878e38389?v=5abdbac464f34fecab87f500b8bc1e46"
+			target="_blank"><img src="assets/img/volunteers.jpeg" class="volImg" alt="Check out the volunteers!"/></a>
+			<div class="overlay">Check this out and Join Us!</div>
+		</div>
+	</div>
+	<!----VOLUNTEERS SECTION END---->
+	<!------CONTACT US SECTION------>
+	<div id="footer">
+		<div class='footer-child'>
+			<h3>Contact us</h3>
+			<span>
+				<p class="add">Call or Whatsapp or Signal: +918826701901</p>
+				<p class="add">Email: team@gitcommit.show</p>
+			</span>
+		</div>
+		<div class='footer-child'><div>
+			<span><h3>Connect</h3></span>
+			<a href="https://www.facebook.com" class="fa fa-facebook fa-footer"></a>
+			<a href="https://www.twitter.com" class="fa fa-twitter fa-footer"></a>
+			<a href="https://www.google.com" class="fa fa-google fa-footer"></a>
+			<a href="https://www.linkedin.com" class="fa fa-linkedin fa-footer"></a>
+			<a href="https://www.instagram.com" class="fa fa-instagram fa-footer"></a>
+			<a href="https://www.youtube.com" class="fa fa-youtube fa-footer"></a></div>
 			<div>
 				<p class="love">Made with ♥ by 100% remote team of Invide</p>
 			</div>
-		</footer>
-	</section>
-	<!-- hamburgur smoothy scroll -->
-<script>
-	$(document).ready(function(){
-	$(".body").click(function(){
-	  $(".collapse").collapse('toggle');
-	});
-  });
-</script>
+		</div>
+		<div class='footer-child'>
+			<span><img src="assets/img/invideLabs.png" class="icon"/></span>
+			<h4>A product of Invide.</h4>
+			
+		</div>
+	</div>	
+	<!---CONTACT US SECTION END--->
+	<!--------- SCRIPTS ---------->
+	<script src="assets/js/countdown.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!------- SCRIPTS END-------->
 </body>
-
 </html>
