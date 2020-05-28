@@ -1,60 +1,119 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@352&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 html,body {
 	height: 100%;
 	width: 100%;
 	background: #ffeafc;
 	font-family: "Josefin Sans", sans-serif;
 	overflow-x:hidden;
+	position: relative;
 }
 @media(max-width:786px){
 	html{
 	overflow-x:hidden;
 	}
-}
+} 
 /*NAVBAR CSS*/
-.navbar-light .navbar-nav .nav-link {
+@media all and (min-width:566) and (max-width:990px) {
+	.navbar-text {
+	display: inline-block;
+	padding-top: 1.5rem;
+	font-size: 2.5em;
+	text-align: center;
+	}
+	#logo {
+		padding: 0 ;
+		height: 65px ;
+    	width: 65px ;
+	}
+}
+
+@media all and (min-width:991px) {
+	.navbar-text{
+		text-align: center ;
+	}
+}
+@media all and (min-width:450px) and (max-width:565px) {
+   .navbar-text {
+	display: inline-block;
+	padding-top: 1rem !important;
+	font-size: 1.3em !important;
+	text-align: center !important;
+	}
+	#logo{
+		padding: 5px !important;
+		height: 50px !important;
+    	width: 50px !important;
+	}
+	.fixed-top{
+	margin: 0px ;
+	padding-right: 15px;
+	text-align: center;
+		
+	}
+}
+@media all and (min-width:100px) and (max-width:449px) {
+   .navbar-text {
+	display: inline-block;
+	padding-top: 1rem !important;
+	font-size: 1em !important;
+	text-align: center !important;
+	}
+	#logo{
+		height: 50px !important;
+    	width: 50px !important;
+	}
+	.fixed-top{
+	margin: 0px !important;
+	padding-right: 15px !important;
+	text-align: center !important;
+	}
+}
+.navbar-light{
+  background-color:#fdfdfd;
+}
+.navbar-text {
+	padding-top: 0.8em;
+	font-size: 2em;
+	color: #bb095c;
+	font-family: 'Kanit', sans-serif;
+	
+}
+.fixed-top{
+	margin-right: 17px;
+}
+
+.navbar-nav .nav-link {
   opacity: 1;
   font-size: 1.313em;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #defff9;
 }
-
 .navbar {
-	background-color: #fff;
-	padding: 1% 2%;
-	font-size: 1.2em;
-	overflow: hidden!important;
+	padding: 0rem 1rem;
 }
 
-.navbar-default,.navbar-nav li a {
-	color: black;
+#logo {
+	height: 60px;
+	width: 60px;
+	margin: 5px;
 }
 
-.navbar-text{
-	padding: 5px;
-	margin: 0;
+.heading {
 	text-align: center;
-	color: red;
 }
-
-#logo{
-    height: 55px ;
-    width: 55px;
-    padding: 5px;
-    margin: 0;
+#nav-ul{
+	font-size: 0.7em;
+	font-weight: bold;
+	padding-top: 0.5em;
 }
-
+/*HOME CSS*/
 @media(max-width:786px){
     #landing-text{
       font-size:18vw!important;
       text-align: center;
     }
 }
-
-.heading {
-	text-align: center;
-}
-/*HOME CSS*/
 #home {
 	background: url("../img/back.png");
 	background-repeat: no-repeat;
@@ -66,7 +125,6 @@ html,body {
   	align-items:center;
 	height: 100%;
 	width: 100%;
-	margin-top:55px;
 	padding: 0;
 }
 #landing-text{
