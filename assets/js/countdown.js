@@ -1,3 +1,20 @@
+// Adding active class to navbar elements
+var container = document.getElementById("nav-ul");
+var btns =  container.getElementsByClassName("nav-item");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+} 
+// -----Countdown function-----
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 27, 2020 10:00:00").getTime();
 
